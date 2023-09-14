@@ -21,25 +21,25 @@
                 <nav class="navegacion">
                     <a href="nosotros.html" class="navegacion__enlace">Nosotros</a>
                     <a href="trabajos.html" class="navegacion__enlace">Trabajos</a>
-                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                    <a href="contacto.html" class="navegacion__enlace--activo">Contacto</a>
                 </nav>
             </div>
         </div>
 
         <div class="header__texto">
-            <h2 class="no-margin">Vanitorys & Amoblamientos</h2>
-            <p class="no-margin">Somos fabricantes de muebles en general</p>
+            <h2 class="no-margin hidden">Vanitorys & Amoblamientos</h2>
+            <p class="no-margin hidden">Somos fabricantes de muebles en general</p>
         </div>
     </header>
 
-    <main class="contenedor">
-        <h3 class="centrar-texto">Contacto</h3>
+    <main class="contenedor ">
+        <h3 class="centrar-texto hidden">Contacto</h3>
 
         <div class="contacto-bg"></div>
 
         <form class="formulario">
             <div class="campo">
-                <label class="campo__label" for="nombre">Nombre</label>
+                <label class="campo__label hidden" for="nombre">Nombre</label>
                 <input 
                     class="campo__field"
                     type="text" 
@@ -47,7 +47,7 @@
                     id="nombre"
                 >
             </div>
-            <div class="campo">
+            <div class="campo hidden">
                 <label class="campo__label" for="email">E-mail</label>
                 <input 
                     class="campo__field"
@@ -56,7 +56,7 @@
                     id="email"
                 >
             </div>
-            <div class="campo">
+            <div class="campo hidden">
                 <label class="campo__label" for="mensaje">Mensaje</label>
                 <textarea 
                     class="campo__field campo__field--textarea"
@@ -64,7 +64,7 @@
                 ></textarea>
             </div>
 
-            <div class="campo">
+            <div class="campo hidden">
                 <input type="submit" value="Enviar" class="boton boton--primario">
             </div>
         </form>
@@ -87,6 +87,9 @@
             </div>
         </div>
     </footer>
+
     <script src="js/modernizr.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 </html>
