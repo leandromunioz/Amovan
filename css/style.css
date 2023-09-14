@@ -1,6 +1,6 @@
 :root {
     --fuenteHeading: 'PT Sans', sans-serif;
-    --fuenteParrafos: 'Open Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif ; 
 
     --primario: #784D3C;
     --gris: #e1e1e1;
@@ -60,6 +60,21 @@ img {
 }
 
 /** Header **/
+
+/** Animación Logo **/
+
+@keyframes moveText {
+  0% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(20%);
+  }
+}
+
+  
+
+
 .webp .header {
     background-image: url(../img/bannereditado.jpg);
 }
@@ -97,9 +112,16 @@ img {
     color: var(--blanco);
     
 }
+
 .logo__nombre {
-    font-weight: 400;
+  font-weight: 400;
+  animation: moveText 6s linear; /* Cambia la duración a tu gusto */
+  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  overflow: hidden; /* Oculta el texto que se desborda */
+  display: inline-block; /* Permite el uso de translateX */
 }
+
 .logo__bold {
     font-weight: 700;
 }
@@ -114,6 +136,11 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+}
+
+.navegacion__enlace--activo,
+.navegacion__enlace:hover {
+    color: rgb(194, 194, 194);
 }
 
 @media (min-width: 768px) {
@@ -257,3 +284,17 @@ img {
 .campo__field--textarea {
     height: 20rem;
 }
+
+
+/*EFECTO APARICIÓN */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1.2s, transform 1.2s;
+  }
+  
+  .visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
