@@ -113,14 +113,18 @@ img {
     
 }
 
-.logo__nombre {
-  font-weight: 400;
-  animation: moveText 6s linear; /* Cambia la duración a tu gusto */
-  animation-fill-mode: forwards; /* Mantiene el estado final de la animación */
-  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
-  overflow: hidden; /* Oculta el texto que se desborda */
-  display: inline-block; /* Permite el uso de translateX */
-}
+.logo-animado {
+    position: relative;
+    left: -100%; /* Punto de partida fuera de la vista */
+    animation: aparecerLogo 3s forwards; /* Duración de 3 segundos y la animación termina en el estado final */
+  }
+  
+  @keyframes aparecerLogo {
+    to {
+      left: 0; /* Posición final */
+    }
+  }
+
 
 .logo__bold {
     font-weight: 700;
@@ -256,7 +260,7 @@ img {
 
 /** Contacto **/
 .contacto-bg {
-    background-image: url(../img/maquinas.jpg);
+    background-image: url(../img/cetteup-IC5sX-7PRN8-unsplash.jpg);
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
