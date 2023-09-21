@@ -264,13 +264,15 @@ img {
     height: 40rem;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: .5rem;
 }
 
 .formulario {
     background-color: var(--blanco);
-    margin: -5rem auto 0 auto;
     width: 95%;
-    padding: 5rem;
+    text-align: left;
+    margin-left: 0;
+    padding-left: 0;
 }
 .campo {
     display: flex;
@@ -278,7 +280,6 @@ img {
 }
 .campo__label {
     flex: 0 0 9rem;
-    text-align: right;
     padding-right: 2rem;
 }
 .campo__field {
